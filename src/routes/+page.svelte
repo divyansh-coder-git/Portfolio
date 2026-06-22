@@ -19,7 +19,6 @@
     padding: 0;
     margin: 0;
     scroll-snap-type: mandatory;
+    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
   }
-
-  
 </style>

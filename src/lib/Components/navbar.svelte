@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="text-white flex gap-20 rounded-full items-center px-6 py-2 top-4 left-1/2 fixed -translate-x-1/2 bg-black/80 w-fit justify-center backdrop-blur z-10"
+  class="text-black flex gap-20 rounded-full items-center px-6 py-2 top-4 left-1/2 fixed -translate-x-1/2 bg-white/60 w-fit justify-center backdrop-blur z-10"
 >
   <h1
     class="text-[1.3em] cursor-pointer font-semibold text-nowrap transition-all ease-in-out duration-200 hover:scale-105"
@@ -45,7 +45,7 @@
   }
   li a {
     position: relative;
-    color: white;
+    color: black;
     font-weight: 300;
   }
 
@@ -58,7 +58,7 @@
     top: 27px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: white;
+    background: black;
   }
 
   li a:hover::before {
