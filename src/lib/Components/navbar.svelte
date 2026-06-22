@@ -1,5 +1,4 @@
 <script lang="ts">
-  import github_icon from "$lib/assets/github-3.png";
 </script>
 
 <div
@@ -29,18 +28,24 @@
     <i class="fa-solid fa-bars"></i>
   </div>
 
-  <a href="https://github.com/divyansh-coder-git" target="_blank"><button
-    class="flex items-center justify-center gap-2 px-6 py-1 rounded-[3rem] text-black bg-slate-200 border border-slate-700 hover:bg-slate-600 hover:text-white text-nowrap font-medium text-[1rem] cursor-pointer transition-all ease-in-out durartion-300 hover:scale-105"
+  <!-- <a href="https://github.com/divyansh-coder-git" target="_blank"><button
+    class="flex items-center justify-center gap-2 px-6 py-1 rounded-[3rem] text-black bg-slate-200 border border-slate-700 hover:bg-black hover:text-white text-nowrap font-medium text-[1rem] cursor-pointer transition-all ease-in-out durartion-300 hover:scale-105"
     ><img
       src={github_icon}
       alt="Github"
       class="relative w-8 p-0 m-0"
-    />Github</button></a>
+    />Github</button></a> -->
+
+    <a href="https://github.com/divyansh-coder-git" target="_blank"><button
+    class="flex items-center justify-center gap-2 px-4 py-1 rounded-[3rem] text-black bg-slate-200 border border-slate-700 hover:bg-black hover:text-white text-nowrap font-medium text-[1rem] cursor-pointer transition-all ease-in-out durartion-300 hover:scale-105"
+    ><i class="fa-brands fa-github"></i>Github</button></a>
+
+    
 
 </div>
 
 <style>
-  * {
+  *:not(i) {
     font-family: "Poppins", sans-serif;
   }
   li a {
@@ -55,7 +60,7 @@
     width: 0px;
     left: 0px;
     height: 3px;
-    top: 27px;
+    top: 19px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
     background: black;
@@ -63,5 +68,10 @@
 
   li a:hover::before {
     width: 100%;
+  }
+
+  a button i{
+    font-size: 25px;
+    height: auto;
   }
 </style>

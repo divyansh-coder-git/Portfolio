@@ -1,5 +1,5 @@
 <script lang="ts">
-  import cover_img from "$lib/assets/github-3.png";
+  import cover_img from "$lib/assets/img1.png";
 
   import Typed from "typed.js";
 
@@ -76,5 +76,6 @@
 
   div i:hover {
     transform: scale(1.1);
+    color: #38bdf8;
   }
 </style>

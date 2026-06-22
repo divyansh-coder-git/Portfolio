@@ -1,5 +1,5 @@
 <script lang="ts">
-  import cover_img from "$lib/assets/github-3.png";
+  import cover_img from "$lib/assets/img2.png";
 </script>
 <hr id="experience" class="w-[95vw] m-auto bg-gray-200 border-none h-px snap-start">
 <div class="text-white h-[90vh] flex flex-col scroll-smooth snap-center mt-25 px-10">
@@ -63,6 +63,10 @@
   .grid-card:hover{
     transform: scale(1.05);
     background-color: white;
+    color: black;
+  }
+
+  .grid-card:hover span{
     color: black;
   }
 
