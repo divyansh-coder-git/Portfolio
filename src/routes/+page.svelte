@@ -4,21 +4,42 @@
   import Experience from "$lib/Components/experience.svelte";
   import Projects from "$lib/Components/projects.svelte";
   import Contacts from "$lib/Components/contact.svelte";
+
+  let mouseX = $state(0);
+  let mouseY = $state(0);
+
+  function handleMouseMove(e: MouseEvent) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  }
 </script>
 
-<div class="scrollbar-track-white scrollbar-thumb-black">
-  <Navbar />
-  <About />
-  <Experience />
-  <Projects />
-  <Contacts />
+<svelte:window onmousemove={handleMouseMove} />
+
+<div
+  class="fixed inset-0 pointer-events-none z-0"
+  style={`background: radial-gradient(
+		600px at ${mouseX}px ${mouseY}px,
+		rgba(29, 78, 216, 0.15),
+		transparent 80%
+	)`}
+></div>
+<div class="bg-[#0a192f]">
+  <div
+    class="relative z-1000 main-div scrollbar-track-white scrollbar-thumb-black"
+  >
+    <Navbar />
+    <About />
+    <Experience />
+    <Projects />
+    <Contacts />
+  </div>
 </div>
 
 <style>
-  div {
-    padding: 0;
-    margin: 0;
-    scroll-snap-type: mandatory;
-    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  :global(html) {
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Pliant", sans-serif;
+    font-optical-sizing: auto;
   }
 </style>

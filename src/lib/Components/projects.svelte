@@ -5,7 +5,7 @@
 <hr id="projects" class="w-[95vw] m-auto bg-gray-200 border-none h-px snap-start" />
 
 <div class="text-white min-h-screen flex flex-col scroll-smooth snap-center mt-25 px-15">
-  <h1 class="text-7xl font-semibold text-center mb-12">Recent Projects</h1>
+  <h1 class="text-7xl text-[#ccd6f6] font-semibold text-center mb-12">Recent Projects</h1>
 
   <div class="grid grid-cols-3 gap-8 px-10">
     <div class="grid-card">
@@ -84,7 +84,8 @@
 
   .grid-card:hover {
     transform: translateY(-10px)scale(1.02);
-    background-color: white;
+    background-color: rgb(255,255,255,0.8);
+    backdrop-filter: blur(8px);
     color: black;
   }
 

@@ -4,7 +4,7 @@
 <hr id="contact" class="w-[95vw] m-auto bg-gray-200 border-none h-px snap-start" />
 <div class="text-white min-h-screen flex flex-col justify-end">
   <div class="flex flex-col justify-center items-center gap-8 mb-15">
-  <h2 class="text-7xl font-semibold text-center mb-10">Contact Me</h2>
+  <h2 class="text-7xl text-[#ccd6f6] font-semibold text-center mb-10">Contact Me</h2>
   <form>
     <div class="input-form flex gap-10">
       <div class="flex flex-col gap-3">
@@ -27,7 +27,7 @@
   </div>
 
   <div
-    class="footer sticky flex flex-col justify-evenly items-center py-5 text-black w-full left-0 bottom-0 border-t border-slate-500 bg-white/10 backdrop-blur"
+    class="footer sticky flex flex-col justify-evenly items-center py-5 text-white w-full left-0 bottom-0 border-t border-slate-500 bg-white/10 backdrop-blur"
   >
     <div class="socials flex gap-3 py-2">
       <a href="https://github.com" aria-label="SocialLinks"
@@ -59,7 +59,7 @@
     </div>
 
     <div class="copyright py-2">
-      <p class="text-sm text-black">
+      <p class="text-sm text-whitek">
         © Divyansh Pandey | All Rights Reserved
       </p>
     </div>
@@ -92,7 +92,7 @@
 
   .links a {
     position: relative;
-    color: black;
+    color: white;
     font-weight: 300;
     font-size: 1.2rem;
   }
@@ -106,7 +106,7 @@
     top: 25px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: black;
+    background: white;
   }
 
   .links a:hover::before {

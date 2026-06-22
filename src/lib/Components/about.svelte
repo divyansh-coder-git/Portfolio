@@ -22,21 +22,21 @@
 
 <div
   id="about"
-  class="text-white min-h-screen px-[12%] w-full relative flex items-center justify-center snap-start"
+  class="text-[#E4E8EF] min-h-screen px-[12%] w-full relative flex items-center justify-center snap-start"
 >
   <div class="container flex items-center justify-center gap-40">
     <img class="w-[30vw]" src={cover_img} alt="CoverImage" />
 
     <div
-      class="info-box flex flex-col text-center items-center justify-center gap-6"
+      class="info-box flex flex-col text-center items-center gap-6 justify-center"
     >
-      <div class="text">
-        <h1 class="text-[5rem] font-semibold text-nowrap">Divyansh Pandey</h1>
-        <span class="text-[1.5rem] font-medium text-nowrap">Electrical Engineering Student @ NIT Silchar</span>
+      <div class="text flex flex-col gap-8">
+        <h1 class="text-6xl text-[#E4E8EF] font-semibold text-nowrap">Divyansh Pandey</h1>
+        <span class="text-2xl text-[#ccd6f6] text-nowrap">Electrical Engineering Student @ NIT Silchar</span>
         <h2 class="text-[2rem]">
-          I love <span class="text-purple-700" use:typingEffect></span>
+          I love <span class="text-[#60a5fa]" use:typingEffect></span>
         </h2>
-        <span class="text-[1.2rem]">Passionate about Machine Learning, Web Development and building practical projects that solve real problems.</span>
+        <span class="text-[1.2rem] text-[#8892b0]">Passionate about Machine Learning, Web Development and building practical projects that solve real problems.</span>
       </div>
 
       <div class="btn-grp flex gap-4">

@@ -3,7 +3,7 @@
 </script>
 <hr id="experience" class="w-[95vw] m-auto bg-gray-200 border-none h-px snap-start">
 <div class="text-white h-[90vh] flex flex-col scroll-smooth snap-center mt-25 px-10">
-  <h1 class="text-7xl font-semibold text-center mb-12">Skills & Interests</h1>
+  <h1 class="text-7xl text-[#ccd6f6] font-semibold text-center mb-12">Skills & Interests</h1>
   <div class="flex items-center justify-center gap-10">
     <div class="grid grid-cols-2 gap-6 px-10">
       <div class="grid-card">
@@ -17,7 +17,7 @@
       <div class="grid-card">
         <i class="fa-solid fa-file-code"></i>
         <h1>Machine Learning</h1>
-        <span
+        <span 
           >Currently learning Machine Learning through Andrew Ng's course and Summer Analytics 2026, exploring supervised learning and model building.</span
         >
       </div>
@@ -55,7 +55,12 @@
     transition: 0.5s ease-in-out;
   }
 
-  .grid-card:hover {
+  .grid-card span{
+    font-size: 0.90rem;
+    color: #8892b0;
+  }
+
+  .grid-card:hover{
     transform: scale(1.05);
     background-color: white;
     color: black;
@@ -71,7 +76,5 @@
     font-weight: 500;
   }
 
-  .grid-card span{
-    font-size: 0.90rem;
-  }
+  
 </style>
