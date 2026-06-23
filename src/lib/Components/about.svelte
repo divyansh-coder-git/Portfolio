@@ -1,5 +1,6 @@
 <script lang="ts">
   import cover_img from "$lib/assets/img1.png";
+  // import resume from "$lib/assets/resume.pdf";
 
   import Typed from "typed.js";
 
@@ -41,7 +42,9 @@
 
       <div class="btn-grp flex gap-4">
         <a
-          href="https://google.com"
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           class="rounded-[3rem] py-2 px-6 border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-white hover:text-black"
           >Download CV</a
         >

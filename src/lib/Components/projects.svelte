@@ -1,7 +1,7 @@
 <script lang="ts">
   import project_img_1 from "$lib/assets/project1.png";
   import project_img_2 from "$lib/assets/project2.png";
-  import project_img_3 from "$lib/assets/project4.png";
+  import project_img_3 from "$lib/assets/project5.png";
 </script>
 
 <hr
@@ -69,17 +69,17 @@
       <img src={project_img_3} alt="ProjectImg" />
 
       <div class="flex flex-col gap-4">
-        <h3>Summer Analytics 2026</h3>
-        <span>Machine learning coursework and practical assignments.</span>
-        <span class="font-semibold">Python • NumPy • ML</span>
+        <h3>SyncChat</h3>
+        <span>Real-time chat application built using Node.js, Express, and Socket.io.</span>
+        <span class="font-semibold">Node.js • Express.js • Socket.io • CSS</span>
         <div class="flex gap-5 w-fit m-auto">
-        <a href="https://www.hackerearth.com/community/challenges/hackathon/summer-analytics-2026/" target="_blank">
+        <a href="https://simple-chat-app-jmqz.onrender.com" target="_blank">
           <button
             class="rounded-[3rem] py-2 px-6 border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
             >Live Demo</button
           ></a>
 
-          <a href="https://github.com/divyansh-coder-git" target="_blank">
+          <a href="https://github.com/divyansh-coder-git/simple-chat-app" target="_blank">
           <button
             class="rounded-[3rem] py-2 px-6 border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
             >Github Repo</button
