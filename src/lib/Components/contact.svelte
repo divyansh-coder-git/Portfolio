@@ -259,7 +259,7 @@
       width: 0px;
       left: 0px;
       height: 3px;
-      top: 20px;
+      top: 17px;
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
       background: #38bdf8;
