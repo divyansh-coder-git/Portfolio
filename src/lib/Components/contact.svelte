@@ -43,13 +43,24 @@
 
 <hr
   id="contact"
-  class="w-[95vw] m-auto bg-gray-200 border-none h-px snap-start"
+  class="w-[95vw] m-auto bg-[#0a3a4f] border-none h-px snap-start"
 />
-<div class="text-white min-h-screen flex flex-col justify-end">
-  <div class="flex flex-col justify-center items-center gap-8 mb-10">
-    <h2 class="text-7xl text-[#ccd6f6] font-semibold text-center mb-10">
+
+<!-- <hr
+  id="projects"
+  class="w-[95vw] m-auto bg-[#0a3a4f] sm:bg-gray-200 border-none h-px snap-start"
+/> -->
+<div class="text-white min-h-screen flex flex-col sm:justify-end">
+  <div
+    class="flex flex-col justify-center md:justify-around items-center gap-8 mb-10 flex-1"
+  >
+    <div class="m-0 p-0 h-14 w-full"></div>
+    <h2
+      class="text-5xl sm:text-7xl text-[#ccd6f6] font-semibold text-center"
+    >
       Contact Me
     </h2>
+     <!-- mt-20 sm:mb-10 -->
     <form
       action="https://formspree.io/f/xzdlbjpy"
       method="post"
@@ -58,8 +69,10 @@
         submitForm();
       }}
     >
-      <div class="input-form flex gap-10">
-        <div class="flex flex-col gap-3">
+      <div
+        class="input-form flex flex-col sm:items-stretch items-center sm:flex-row sm:gap-10"
+      >
+        <div class="flex flex-col gap-1 sm:gap-3">
           <input
             bind:value={name}
             type="text"
@@ -81,20 +94,22 @@
             name="phone_number"
           />
         </div>
-        <div class="flex flex-col gap-2 items-center">
+        <div
+          class="flex flex-col gap-1 mt-1 sm:mt-0 sm:gap-2 flex-1 items-center"
+        >
           <textarea
             bind:value={message}
-            class="px-3 py-2 border-2 border-black w-xl h-full rounded-2xl"
+            class="px-4 py-1 w-55 text-sm sm:text-base sm:px-3 sm:py-2 border-2 flex-1 border-black sm:w-xl h-full rounded-xl sm:rounded-2xl"
             placeholder="Message"
             name="message"
           ></textarea>
           <button
             type="submit"
-            class="bg-white text-black rounded-[3rem] py-2 px-6 border-2 border-black cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-black hover:text-white w-full"
+            class="w-full bg-white text-black rounded-2xl sm:rounded-[3rem] text-sm sm:text-base px-4 py-1 sm:py-2 sm:px-6 border-2 border-black cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-black hover:text-white"
             >{sending ? "Sending..." : "Submit"}</button
           >
           {#if submitted}
-            <p class="text-green-400 mt-4">
+            <p class="text-green-400 sm:mt-4">
               <i class="fa-solid fa-check"></i> Message sent successfully
             </p>
           {/if}
@@ -104,21 +119,27 @@
   </div>
 
   <div
-    class="footer sticky flex flex-col justify-evenly items-center py-5 text-white w-full left-0 bottom-0 border-t border-slate-500 bg-white/10 backdrop-blur"
+    class="footer sticky bottom-0 left-0 flex flex-col justify-evenly items-center py-2 sm:py-5 text-white w-full border-t border-slate-500 bg-white/10 backdrop-blur"
   >
-    <div class="socials flex gap-3 py-2">
-      <a href="https://github.com/divyansh-coder-git" target="_blank" aria-label="SocialLinks"
-        ><i class="fa-brands fa-github"></i></a
+    <div class="socials flex gap-3 sm:gap-3 sm:py-2">
+      <a
+        href="https://github.com/divyansh-coder-git"
+        target="_blank"
+        aria-label="SocialLinks"><i class="fa-brands fa-github"></i></a
       >
-      <a href="https://www.linkedin.com/in/divyansh-pandey-6180482a9/" target="_blank" aria-label="SocialLinks"
-        ><i class="fa-brands fa-linkedin"></i></a
+      <a
+        href="https://www.linkedin.com/in/divyansh-pandey-6180482a9/"
+        target="_blank"
+        aria-label="SocialLinks"><i class="fa-brands fa-linkedin"></i></a
       >
-      <a href="https://instagram.com/divyansh_coder" target="_blank" aria-label="SocialLinks"
-        ><i class="fa-brands fa-instagram"></i></a
+      <a
+        href="https://instagram.com/divyansh_coder"
+        target="_blank"
+        aria-label="SocialLinks"><i class="fa-brands fa-instagram"></i></a
       >
     </div>
 
-    <div class="links py-2">
+    <div class="links sm:py-2">
       <ul class="flex gap-3">
         <li>
           <a href="#projects">Projects</a>
@@ -209,5 +230,30 @@
 
   .links a:hover::before {
     width: 100%;
+  }
+
+  @media screen and (max-width: 640px) {
+    .input-form input {
+      font-size: 0.8rem;
+      height: 1rem;
+      width: 220px;
+      padding: 1rem 1rem;
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      background-color: rgb(42, 46, 50);
+    }
+
+    .socials i {
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+
+    .links a {
+      position: relative;
+      color: white;
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
   }
 </style>
