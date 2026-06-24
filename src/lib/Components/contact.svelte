@@ -55,12 +55,10 @@
     class="flex flex-col justify-center md:justify-around items-center gap-8 mb-10 flex-1"
   >
     <div class="m-0 p-0 h-14 w-full"></div>
-    <h2
-      class="text-5xl sm:text-7xl text-[#ccd6f6] font-semibold text-center"
-    >
+    <h2 class="text-5xl sm:text-7xl text-[#ccd6f6] font-semibold text-center">
       Contact Me
     </h2>
-     <!-- mt-20 sm:mb-10 -->
+    <!-- mt-20 sm:mb-10 -->
     <form
       action="https://formspree.io/f/xzdlbjpy"
       method="post"
@@ -72,7 +70,7 @@
       <div
         class="input-form flex flex-col sm:items-stretch items-center sm:flex-row sm:gap-10"
       >
-        <div class="flex flex-col gap-1 sm:gap-3">
+        <div class="flex flex-col gap-2 sm:gap-3">
           <input
             bind:value={name}
             type="text"
@@ -95,17 +93,17 @@
           />
         </div>
         <div
-          class="flex flex-col gap-1 mt-1 sm:mt-0 sm:gap-2 flex-1 items-center"
+          class="flex flex-col gap-1 mt-2 sm:mt-0 sm:gap-2 flex-1 items-center"
         >
           <textarea
             bind:value={message}
-            class="px-4 py-1 w-55 text-sm sm:text-base sm:px-3 sm:py-2 border-2 flex-1 border-black sm:w-xl h-full rounded-xl sm:rounded-2xl"
+            class="px-4 py-1 w-[300px] text-[1.2rem] sm:text-base sm:px-3 sm:py-2 border-2 flex-1 border-black sm:w-xl h-full rounded-xl sm:rounded-2xl"
             placeholder="Message"
             name="message"
           ></textarea>
           <button
             type="submit"
-            class="w-full bg-white text-black rounded-2xl sm:rounded-[3rem] text-sm sm:text-base px-4 py-1 sm:py-2 sm:px-6 border-2 border-black cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-black hover:text-white"
+            class="w-full bg-white text-black rounded-2xl sm:rounded-[3rem] text-[1.2rem] sm:text-base px-4 py-1 sm:py-2 sm:px-6 border-2 border-black cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-black hover:text-white"
             >{sending ? "Sending..." : "Submit"}</button
           >
           {#if submitted}
@@ -234,9 +232,9 @@
 
   @media screen and (max-width: 640px) {
     .input-form input {
-      font-size: 0.8rem;
-      height: 1rem;
-      width: 220px;
+      font-size: 1.2rem;
+      height: 3rem;
+      width: 300px;
       padding: 1rem 1rem;
       border: 2px solid black;
       border-radius: 0.5rem;
@@ -254,6 +252,21 @@
       color: white;
       font-weight: 300;
       font-size: 0.8rem;
+    }
+    .links a::before {
+      position: absolute;
+      content: "";
+      width: 0px;
+      left: 0px;
+      height: 3px;
+      top: 20px;
+      border-radius: 1rem;
+      transition: 0.3s ease-in-out;
+      background: #38bdf8;
+    }
+
+    .links a:hover::before {
+      width: 100%;
     }
   }
 </style>
