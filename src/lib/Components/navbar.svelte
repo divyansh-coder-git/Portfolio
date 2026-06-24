@@ -1,9 +1,29 @@
 <script lang="ts">
-  let menu: boolean = $state(false);
-  
+  let isOpen = $state(false);
+
+  function clickOutside(node: HTMLElement, callback: () => void) {
+    const handleClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      
+      if (node && !node.contains(target)) {
+        callback();
+      }
+    };
+
+    document.addEventListener('click', handleClick, true);
+
+    return {
+      destroy() {
+        document.removeEventListener('click', handleClick, true);
+      }
+    };
+  }
+  const toggleMenu = () => isOpen = !isOpen;
+  const closeMenu = () => isOpen = false;
 </script>
 
 <div
+  use:clickOutside={closeMenu}
   class="nav-div text-black flex gap-20 rounded-full items-center px-6 py-2 top-4 left-1/2 fixed -translate-x-1/2 bg-white/60 w-fit justify-center backdrop-blur z-10"
 >
   <h1
@@ -11,25 +31,29 @@
   >
     <a href="#about">Divyansh Pandey</a>
   </h1>
-  <ul class="nav-ul {menu ? "active" : "no-active"} flex gap-3 md:gap-8">
+  <ul class="nav-ul {isOpen ? 'active' : 'no-active'} flex gap-3 md:gap-8">
     <li>
       <a href="#about">About</a>
     </li>
-    <hr>
+    <hr />
     <li>
       <a href="#projects">Projects</a>
     </li>
-    <hr>
+    <hr />
     <li>
       <a href="#experience">Skills</a>
     </li>
-    <hr>
+    <hr />
     <li>
       <a href="#contact">Contacts</a>
     </li>
   </ul>
 
-  <button onclick = {()=> menu = !menu } aria-label="ToggleButton" class="block md:hidden">
+  <button
+    onclick={toggleMenu}
+    aria-label="ToggleButton"
+    class="block md:hidden"
+  >
     <i class="fa-solid fa-bars"></i>
   </button>
 
@@ -41,7 +65,10 @@
       class="relative w-8 p-0 m-0"
     />Github</button></a> -->
 
-  <a class="git-btn" href="https://github.com/divyansh-coder-git" target="_blank"
+  <a
+    class="git-btn"
+    href="https://github.com/divyansh-coder-git"
+    target="_blank"
     ><button
       class="flex items-center justify-center gap-2 px-4 py-1 rounded-[3rem] text-black bg-slate-200 border border-slate-700 hover:bg-black hover:text-white text-nowrap font-medium text-[1rem] cursor-pointer transition-all ease-in-out durartion-300 hover:scale-105"
       ><i class="fa-brands fa-github"></i>Github</button
@@ -71,7 +98,7 @@
     background: black;
   }
 
-  .nav-div hr{
+  .nav-div hr {
     display: none;
   }
 
@@ -85,21 +112,21 @@
   }
 
   @media (max-width: 640px) {
-    .nav-div{
+    .nav-div {
       width: 90vw;
-      justify-content:space-between;
+      justify-content: space-between;
     }
 
-    .nav-div hr{
+    .nav-div hr {
       display: block;
       padding: 0px;
     }
 
-    .git-btn{
+    .git-btn {
       display: none;
     }
 
-    .nav-ul{
+    .nav-ul {
       position: absolute;
       top: 100%;
       left: 0%;
@@ -107,19 +134,15 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      background-color: rgba(255,255,255,0.6);
+      background-color: rgba(255, 255, 255, 0.6);
       border-radius: 1.5rem;
       padding: 0.5rem 0;
       margin-top: 0.5rem;
       display: none;
     }
 
-    .nav-ul.active{
+    .nav-ul.active {
       display: flex;
     }
-
-
-
-
   }
 </style>
