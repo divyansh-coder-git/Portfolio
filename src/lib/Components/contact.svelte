@@ -125,16 +125,12 @@
         target="_blank"
         aria-label="SocialLinks"><i class="fa-brands fa-github"></i></a
       >
-<<<<<<< HEAD
-      <a href="https://www.linkedin.com/in/divyansh-pandey-nits/" target="_blank" aria-label="SocialLinks"
-        ><i class="fa-brands fa-linkedin"></i></a
-=======
       <a
-        href="https://www.linkedin.com/in/divyansh-pandey-6180482a9/"
+        href="https://www.linkedin.com/in/divyansh-pandey-nits/"
         target="_blank"
         aria-label="SocialLinks"><i class="fa-brands fa-linkedin"></i></a
->>>>>>> 561813845622154ce62ca25f6045593ec6a22693
       >
+
       <a
         href="https://instagram.com/divyansh_coder"
         target="_blank"
