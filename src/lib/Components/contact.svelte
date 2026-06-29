@@ -110,7 +110,7 @@
       <a href="https://github.com/divyansh-coder-git" target="_blank" aria-label="SocialLinks"
         ><i class="fa-brands fa-github"></i></a
       >
-      <a href="https://www.linkedin.com/in/divyansh-pandey-6180482a9/" target="_blank" aria-label="SocialLinks"
+      <a href="https://www.linkedin.com/in/divyansh-pandey-nits/" target="_blank" aria-label="SocialLinks"
         ><i class="fa-brands fa-linkedin"></i></a
       >
       <a href="https://instagram.com/divyansh_coder" target="_blank" aria-label="SocialLinks"
