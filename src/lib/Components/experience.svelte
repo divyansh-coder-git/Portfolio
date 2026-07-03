@@ -86,7 +86,7 @@
     align-items: baseline;
     justify-content: left;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   .grid-card span {
@@ -95,9 +95,10 @@
   }
 
   .grid-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     background-color: white;
     color: black;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.5);
   }
 
   .grid-card:hover span {

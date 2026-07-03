@@ -150,7 +150,7 @@
           <a href="#experience">Skills</a>
         </li>
         <li>
-          <a href="#contacts">Contacts</a>
+          <a href="#contact">Contacts</a>
         </li>
       </ul>
     </div>

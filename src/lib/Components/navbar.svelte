@@ -4,22 +4,22 @@
   function clickOutside(node: HTMLElement, callback: () => void) {
     const handleClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      
+
       if (node && !node.contains(target)) {
         callback();
       }
     };
 
-    document.addEventListener('click', handleClick, true);
+    document.addEventListener("click", handleClick, true);
 
     return {
       destroy() {
-        document.removeEventListener('click', handleClick, true);
-      }
+        document.removeEventListener("click", handleClick, true);
+      },
     };
   }
-  const toggleMenu = () => isOpen = !isOpen;
-  const closeMenu = () => isOpen = false;
+  const toggleMenu = () => (isOpen = !isOpen);
+  const closeMenu = () => (isOpen = false);
 </script>
 
 <div
@@ -29,7 +29,7 @@
   <h1
     class="text-[1.3em] cursor-pointer font-semibold text-nowrap transition-all ease-in-out duration-200 hover:scale-105"
   >
-    <a href="#about">Divyansh Pandey</a>
+    <a class="nav-logo-text" href="#about">~/ divyansh</a>
   </h1>
   <ul class="nav-ul {isOpen ? 'active' : 'no-active'} flex gap-3 md:gap-8">
     <li>
@@ -57,14 +57,6 @@
     <i class="fa-solid fa-bars"></i>
   </button>
 
-  <!-- <a href="https://github.com/divyansh-coder-git" target="_blank"><button
-    class="flex items-center justify-center gap-2 px-6 py-1 rounded-[3rem] text-black bg-slate-200 border border-slate-700 hover:bg-black hover:text-white text-nowrap font-medium text-[1rem] cursor-pointer transition-all ease-in-out durartion-300 hover:scale-105"
-    ><img
-      src={github_icon}
-      alt="Github"
-      class="relative w-8 p-0 m-0"
-    />Github</button></a> -->
-
   <a
     class="git-btn"
     href="https://github.com/divyansh-coder-git"
@@ -77,13 +69,21 @@
 </div>
 
 <style>
-  *:not(i) {
+  /* *:not(i) {
     font-family: "Poppins", sans-serif;
+  } */
+
+  .nav-logo-text {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
   }
+
   li a {
     position: relative;
     color: black;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   li a::before {

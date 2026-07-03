@@ -1,6 +1,6 @@
 <script lang="ts">
   import project_img_1 from "$lib/assets/project1.png";
-  import project_img_2 from "$lib/assets/project2.png";
+  import project_img_2 from "$lib/assets/project6.png";
   import project_img_3 from "$lib/assets/project5.png";
 </script>
 
@@ -36,7 +36,7 @@
 
         <span class="font-semibold">Svelte • TS • Tailwind</span>
         <div class="flex gap-2 md:gap-5 w-fit m-auto">
-          <a href="https://habit-tracker-svelte.netlify.app/" target="_blank">
+          <a href="https://habit-tracker-svelte.netlify.app/" target="_blank" aria-label="View live demo of habit tracker">
             <button
               class="rounded-2xl md:rounded-[3rem] px-4 py-1 md:py-2 md:px-6 text-sm md:text-base border md:border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
               >Live Demo</button
@@ -45,6 +45,7 @@
           <a
             href="https://github.com/divyansh-coder-git/habit-tracker-svelte"
             target="_blank"
+            aria-label="View source code of habit tracker on Github."
           >
             <button
               class="rounded-2xl md:rounded-[3rem] px-4 py-1 md:py-2 md:px-6 text-sm md:text-base border md:border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
@@ -58,16 +59,16 @@
     <div class="grid-card">
       <img src={project_img_2} alt="ProjectImg" />
       <div class="flex flex-col gap-2 md:gap-4">
-        <h3>Portfolio Website</h3>
-        <span>Personal portfolio showcasing projects, skills and experience.</span>
-        <span class="font-semibold">Svelte • TS • Tailwind</span>
+        <h3>Hostel Allocation System</h3>
+        <span>Automated room assignment from Excel-based participant and room data.</span>
+        <span class="font-semibold">Svelte • TS • SheetJS • Tailwind CSS</span>
         <div class="flex gap-2 md:gap-5 w-fit m-auto">
-        <a href="https://divyansh-pandey.netlify.app/" target="_blank">
+        <a href="https://hostel-allotment.netlify.app/" target="_blank" aria-label="View Live Demo of Hostel Allotment system.">
           <button
             class="rounded-2xl md:rounded-[3rem] px-4 py-1 md:py-2 md:px-6 text-sm md:text-base border md:border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
             >Live Demo</button
           ></a>
-          <a href="https://github.com/divyansh-coder-git/Portfolio" target="_blank">
+          <a href="https://github.com/divyansh-coder-git/hackathon-hostel-allotment-system" target="_blank" aria-label="View source code of hostel allotment on github.">
           <button
             class="rounded-2xl md:rounded-[3rem] px-4 py-1 md:py-2 md:px-6 text-sm md:text-base border md:border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
             >Github Repo</button
@@ -78,19 +79,18 @@
 
     <div class="grid-card">
       <img src={project_img_3} alt="ProjectImg" />
-
       <div class="flex flex-col gap-2 md:gap-4">
-        <h3>SyncChat</h3>
-        <span>Real-time chat application built using Node.js, Express, and Socket.io.</span>
-        <span class="font-semibold">Node.js • Express.js • Socket.io • CSS</span>
+        <h3>RealTime Chat</h3>
+        <span>Implemented WebSocket-based messaging with a responsive interface.</span>
+        <span class="font-semibold">Node.js • Express.js • Socket.io • Tailwind</span>
         <div class="flex gap-2 md:gap-5 w-fit m-auto">
-        <a href="https://simple-chat-app-jmqz.onrender.com" target="_blank">
+        <a href="https://simple-chat-app-jmqz.onrender.com" target="_blank" aria-label="View live demo of realtime chat.">
           <button
             class="rounded-2xl md:rounded-[3rem] px-4 py-1 md:py-2 md:px-6 text-sm md:text-base border md:border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
             >Live Demo</button
           ></a>
 
-          <a href="https://github.com/divyansh-coder-git/simple-chat-app" target="_blank">
+          <a href="https://github.com/divyansh-coder-git/simple-chat-app" target="_blank" aria-label="View source code of realtime chat on github.">
           <button
             class="rounded-2xl md:rounded-[3rem] px-4 py-1 md:py-2 md:px-6 text-sm md:text-base border md:border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300"
             >Github Repo</button
@@ -111,7 +111,7 @@
     text-align: center;
     border: 1px solid #0a3a4f;
     /* border: 2x solid white */
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
   }
@@ -127,6 +127,7 @@
     backdrop-filter: blur(8px);
     border-color: #60a5fa;
     color: black;
+    box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.5);
   }
 
   .grid-card:hover button {

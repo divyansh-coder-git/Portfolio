@@ -7,7 +7,11 @@
   // Define the custom Svelte action
   function typingEffect(node: HTMLElement) {
     const typed = new Typed(node, {
-      strings: ["making Websites", "learning Machine Learning", "Exploring Data Science", "Creating usefull projects"],
+      strings: [
+        "building good UIs.",
+        "developing scalable tools.",
+        "solving complex logic.",
+      ],
       typeSpeed: 50,
       backSpeed: 30,
       loop: true,
@@ -25,19 +29,32 @@
   id="about"
   class="text-[#E4E8EF] min-h-screen px-[12%] w-full relative flex items-center justify-center snap-start"
 >
-  <div class="container flex items-center justify-center  mt-8 gap-5 sm:gap-40 flex-col sm:flex-row">
+  <div
+    class="container flex items-center justify-center mt-8 gap-5 sm:gap-40 flex-col sm:flex-row"
+  >
     <img class="w-[45vw] sm:w-[30vw]" src={cover_img} alt="CoverImage" />
 
     <div
       class="info-box flex flex-col text-center items-center gap-6 justify-center"
     >
       <div class="text flex flex-col gap-4 sm:gap-8">
-        <h1 class="text-3xl lg:text-6xl text-[#E4E8EF] font-semibold text-nowrap">Divyansh Pandey</h1>
-        <span class="text-xl sm:text-2xl text-[#ccd6f6] sm:text-nowrap">Electrical Engineering Student @ NIT Silchar</span>
+        <h1
+          class="text-3xl lg:text-6xl text-[#E4E8EF] font-semibold text-nowrap"
+        >
+          Divyansh Pandey
+        </h1>
+
+        <span class="text-xl sm:text-2xl text-[#ccd6f6] sm:text-nowrap"
+          >Electrical Engineering Student @ NIT Silchar</span
+        >
         <h2 class="text-[1rem] sm:text-[2rem]">
           I love <span class="text-[#60a5fa]" use:typingEffect></span>
         </h2>
-        <span class="text-[0.9rem] sm:text-[1.2rem] text-[#8892b0]">Passionate about Machine Learning, Web Development and building practical projects that solve real problems.</span>
+        <span class="text-[0.9rem] sm:text-[1.2rem] text-[#8892b0]"
+          >I enjoy building full-stack web applications, experimenting with
+          machine learning, and turning ideas into practical software that
+          people can actually use.</span
+        >
       </div>
 
       <div class="btn-grp flex gap-2 sm:gap-4">
@@ -57,14 +74,20 @@
       </div>
 
       <div class="socials flex gap-4 sm:gap-8 text-[1.5rem] sm:text-[2.5rem]">
-        <a href="https://github.com/divyansh-coder-git" target="_blank" aria-label="SocialLinks"
-          ><i class="fa-brands fa-github"></i></a
+        <a
+          href="https://github.com/divyansh-coder-git"
+          target="_blank"
+          aria-label="SocialLinks"><i class="fa-brands fa-github"></i></a
         >
-        <a href="https://www.linkedin.com/in/divyansh-pandey-nits/" target="_blank" aria-label="SocialLinks"
-          ><i class="fa-brands fa-linkedin"></i></a
+        <a
+          href="https://www.linkedin.com/in/divyansh-pandey-nits/"
+          target="_blank"
+          aria-label="SocialLinks"><i class="fa-brands fa-linkedin"></i></a
         >
-        <a href="https://instagram.com/divyansh_coder" target="_blank" aria-label="SocialLinks"
-          ><i class="fa-brands fa-instagram"></i></a
+        <a
+          href="https://instagram.com/divyansh_coder"
+          target="_blank"
+          aria-label="SocialLinks"><i class="fa-brands fa-instagram"></i></a
         >
       </div>
     </div>
