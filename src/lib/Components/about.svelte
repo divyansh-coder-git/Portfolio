@@ -27,7 +27,7 @@
 
 <div
   id="about"
-  class="text-[#E4E8EF] min-h-screen px-[12%] w-full relative flex items-center justify-center snap-start"
+  class="text-[#E4E8EF] min-h-screen px-[12%] pt-5 w-full relative flex items-center justify-center snap-start"
 >
   <div
     class="container flex items-center justify-center mt-8 gap-5 sm:gap-40 flex-col sm:flex-row"
