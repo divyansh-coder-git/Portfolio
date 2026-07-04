@@ -17,7 +17,7 @@
 <!-- mt-5 md:mt-20 -->
 <div class="m-0 p-0 h-12 w-full"></div>
   <h1
-    class="text-4xl md:text-7xl text-[#ccd6f6] font-semibold text-center mb-5 md:mb-0"
+    class="text-4xl md:text-5xl text-[#ccd6f6] font-semibold text-center mb-5 md:mb-0"
   >
     Skills & Interests
   </h1>

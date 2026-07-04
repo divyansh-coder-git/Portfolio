@@ -55,7 +55,7 @@
     class="flex flex-col justify-center md:justify-around items-center gap-8 mb-10 flex-1"
   >
     <div class="m-0 p-0 h-14 w-full"></div>
-    <h2 class="text-5xl sm:text-7xl text-[#ccd6f6] font-semibold text-center">
+    <h2 class="text-5xl sm:text-6xl text-[#ccd6f6] font-semibold text-center">
       Contact Me
     </h2>
     <!-- mt-20 sm:mb-10 -->

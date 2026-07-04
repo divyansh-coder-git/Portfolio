@@ -22,7 +22,7 @@
 <!-- md:mt-25 -->
  <!-- mt-5 -->
 <div class="m-0 p-0 h-12 w-full"></div>
-  <h1 class="text-4xl md:text-7xl text-[#ccd6f6] font-semibold text-center md:mb-3">
+  <h1 class="text-4xl md:text-5xl text-[#ccd6f6] font-semibold text-center md:mb-3">
     Recent Projects
   </h1>
   <!-- md:mb-12 -->
