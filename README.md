@@ -1,42 +1,107 @@
-# sv
+<h1 align="center">Divyansh Pandey</h1>
+<h3 align="center">
+Electrical Engineering Undergrad @ NIT Silchar
+</h3>
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+<p align="center">
+Building Full-Stack Projects • Learning AI • Always Improving
+</p>
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```sh
-# create a new project
-npx sv create my-app
-```
 
-To recreate this project with the same configuration:
+## About Me
+🌐 Live Portfolio: https://divyansh-pandey.netlify.app/
 
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --add eslint tailwindcss="plugins:none" --install npm portfolio-new
-```
+Hi! I'm Divyansh, a first-year Electrical Engineering student at NIT Silchar who loves building modern web applications and exploring Machine Learning.
 
-## Developing
+I'm passionate about solving real-world problems through software, learning new technologies, and continuously improving my development skills.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Currently I'm focusing on:
 
-```sh
+- Machine Learning
+- Full Stack Development
+- Data Structures & Algorithms
+
+
+## Tech Stack
+
+- **Languages:** Python, C++, JavaScript, TypeScript
+- **Frontend:** SvelteKit, Tailwind CSS
+- **Backend:** FastAPI(Learning)
+- **Tools:** Git, GitHub, VS Code
+
+
+## Features
+
+- Responsive Design
+- Dark Theme
+- Modern UI
+- Smooth Animations
+- Project Showcase
+- Skills Section
+- Contact Form
+
+
+## Installation
+To run the application locally, you can set it up on your computer and run it on localhost.
+```bash
+git clone https://github.com/DivyanshCoder1/portfolio.git
+cd portfolio
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
 
-To create a production version of your app:
+## Project Structure
 
-```sh
-npm run build
+```tree
+src
+├── app.d.ts
+├── app.html
+├── lib
+│   ├── Components
+│   │   ├── about.svelte
+│   │   ├── contact.svelte
+│   │   ├── experience.svelte
+│   │   ├── footer.svelte
+│   │   ├── navbar.svelte
+│   │   └── projects.svelte
+│   ├── assets
+│   │   ├── favicon-1.svg
+│   │   ├── favicon.svg
+│   │   ├── github-2.png
+│   │   ├── github-3.png
+│   │   ├── github.png
+│   │   ├── img1.png
+│   │   ├── img2.png
+│   │   ├── main-menu.png
+│   │   ├── newicon.png
+│   │   ├── project1.png
+│   │   ├── project2.png
+│   │   ├── project3.png
+│   │   ├── project4.png
+│   │   ├── project5.png
+│   │   └── project6.png
+│   └── index.ts
+└── routes
+    ├── +layout.svelte
+    ├── +page.svelte
+    └── layout.css
+
+static
+├── resume.pdf
+└── robots.txt
 ```
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Made by
+
+**Divyansh Pandey**
+
+[Portfolio](https://divyansh-pandey.netlify.app/)
+[GitHub](https://github.com/DivyanshCoder1)
+[LinkedIn](https://linkedin.com/in/divyansh-pandey-nits)
+[Email](divyanshpandey062@gmail.com)
+
+---
