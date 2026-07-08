@@ -100,7 +100,7 @@ static
 **Divyansh Pandey**
 
 [Portfolio](https://divyansh-pandey.netlify.app/)
-[GitHub](https://github.com/DivyanshCoder1)
+[GitHub](https://github.com/divyansh-coder-git)
 [LinkedIn](https://linkedin.com/in/divyansh-pandey-nits)
 [Email](divyanshpandey062@gmail.com)
 
