@@ -9,24 +9,24 @@
 
 <!-- <hr
   id="projects"
-  class="w-[95vw] m-auto bg-[#0a3a4f] md:bg-gray-200 border-none h-px snap-start"
+  class="w-[95vw] m-auto bg-[#0a3a4f] lg:bg-gray-200 border-none h-px snap-start"
 /> -->
 <div
-  class="text-white h-screen md:h-screen flex flex-col scroll-smooth md:justify-around snap-center md:px-10"
+  class="text-white h-screen lg:h-screen flex flex-col scroll-smooth lg:justify-around snap-center lg:px-10"
 >
-<!-- mt-5 md:mt-20 -->
+<!-- mt-5 lg:mt-20 -->
 <div class="m-0 p-0 h-12 w-full"></div>
   <h1
-    class="text-4xl md:text-5xl text-[#ccd6f6] font-semibold text-center mb-5 md:mb-0"
+    class="text-4xl lg:text-5xl text-[#ccd6f6] font-semibold text-center mb-5 lg:mb-0"
   >
     Skills & Interests
   </h1>
-   <!-- mb-6 md:mb-5 -->
+   <!-- mb-6 lg:mb-5 -->
   <div
-    class="flex flex-col md:flex-row items-center justify-center md:gap-10 flex-1 md:flex-none"
+    class="flex flex-col lg:flex-row items-center justify-center lg:gap-10 flex-1 lg:flex-none"
   >
     <div
-      class="flex flex-col justify-around md:grid md:grid-cols-2 gap-4 md:gap-6 px-10 flex-1 pb-5 md:pb-0"
+      class="flex flex-col justify-around lg:grid lg:grid-cols-2 gap-4 lg:gap-6 px-10 flex-1 pb-5 lg:pb-0"
     >
       <div class="grid-card">
         <i class="fa-solid fa-code"></i>
@@ -68,7 +68,7 @@
       </div>
     </div>
     <img
-      class="hidden md:block md:w-[25vw] md:h-auto md:object-cover"
+      class="hidden lg:block lg:w-[25vw] lg:h-auto lg:object-cover"
       src={cover_img}
       alt="CoverImage"
     />
@@ -115,7 +115,7 @@
     font-weight: 500;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .grid-card {
       padding: 1rem 1rem;
       border-radius: 1rem;

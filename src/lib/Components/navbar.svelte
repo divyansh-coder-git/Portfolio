@@ -31,7 +31,7 @@
   >
     <a class="nav-logo-text" href="#about">~/ divyansh</a>
   </h1>
-  <ul class="nav-ul {isOpen ? 'active' : 'no-active'} flex gap-3 md:gap-8">
+  <ul class="nav-ul {isOpen ? 'active' : 'no-active'} flex gap-3 lg:gap-8">
     <li>
       <a href="#about">About</a>
     </li>
@@ -52,7 +52,7 @@
   <button
     onclick={toggleMenu}
     aria-label="ToggleButton"
-    class="block md:hidden"
+    class="block lg:hidden"
   >
     <i class="fa-solid fa-bars"></i>
   </button>
@@ -111,7 +111,7 @@
     height: auto;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     .nav-div {
       width: 90vw;
       justify-content: space-between;

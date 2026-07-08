@@ -48,17 +48,17 @@
 
 <!-- <hr
   id="projects"
-  class="w-[95vw] m-auto bg-[#0a3a4f] sm:bg-gray-200 border-none h-px snap-start"
+  class="w-[95vw] m-auto bg-[#0a3a4f] lg:bg-gray-200 border-none h-px snap-start"
 /> -->
-<div class="text-white min-h-screen flex flex-col sm:justify-end">
+<div class="text-white min-h-screen flex flex-col lg:justify-end">
   <div
-    class="flex flex-col justify-center md:justify-around items-center gap-8 mb-10 flex-1"
+    class="flex flex-col justify-center lg:justify-around items-center gap-8 mb-10 flex-1"
   >
     <div class="m-0 p-0 h-14 w-full"></div>
-    <h2 class="text-5xl sm:text-6xl text-[#ccd6f6] font-semibold text-center">
+    <h2 class="text-5xl lg:text-6xl text-[#ccd6f6] font-semibold text-center">
       Contact Me
     </h2>
-    <!-- mt-20 sm:mb-10 -->
+    <!-- mt-20 lg:mb-10 -->
     <form
       action="https://formspree.io/f/xzdlbjpy"
       method="post"
@@ -68,9 +68,9 @@
       }}
     >
       <div
-        class="input-form flex flex-col sm:items-stretch items-center sm:flex-row sm:gap-10"
+        class="input-form flex flex-col lg:items-stretch items-center lg:flex-row lg:gap-10"
       >
-        <div class="flex flex-col gap-2 sm:gap-3">
+        <div class="flex flex-col gap-2 lg:gap-3">
           <input
             bind:value={name}
             type="text"
@@ -93,21 +93,21 @@
           />
         </div>
         <div
-          class="flex flex-col gap-1 mt-2 sm:mt-0 sm:gap-2 flex-1 items-center"
+          class="flex flex-col gap-1 mt-2 lg:mt-0 lg:gap-2 flex-1 items-center"
         >
           <textarea
             bind:value={message}
-            class="px-4 py-1 w-[300px] text-[1.2rem] sm:text-base sm:px-3 sm:py-2 border-2 flex-1 border-black sm:w-xl h-full rounded-xl sm:rounded-2xl"
+            class="px-4 py-1 w-[300px] text-[1.2rem] lg:text-base lg:px-3 lg:py-2 border-2 flex-1 border-black lg:w-xl h-full rounded-xl lg:rounded-2xl"
             placeholder="Message"
             name="message"
           ></textarea>
           <button
             type="submit"
-            class="w-full bg-white text-black rounded-2xl sm:rounded-[3rem] text-[1.2rem] sm:text-base px-4 py-1 sm:py-2 sm:px-6 border-2 border-black cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-black hover:text-white"
+            class="w-full bg-white text-black rounded-2xl lg:rounded-[3rem] text-[1.2rem] lg:text-base px-4 py-1 lg:py-2 lg:px-6 border-2 border-black cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-black hover:text-white"
             >{sending ? "Sending..." : "Submit"}</button
           >
           {#if submitted}
-            <p class="text-green-400 sm:mt-4">
+            <p class="text-green-400 lg:mt-4">
               <i class="fa-solid fa-check"></i> Message sent successfully
             </p>
           {/if}
@@ -117,9 +117,9 @@
   </div>
 
   <div
-    class="footer sticky bottom-0 left-0 flex flex-col justify-evenly items-center py-2 sm:py-5 text-white w-full border-t border-slate-500 bg-white/10 backdrop-blur"
+    class="footer sticky bottom-0 left-0 flex flex-col justify-evenly items-center py-2 lg:py-5 text-white w-full border-t border-slate-500 bg-white/10 backdrop-blur"
   >
-    <div class="socials flex gap-3 sm:gap-3 sm:py-2">
+    <div class="socials flex gap-3 lg:gap-3 lg:py-2">
       <a
         href="https://github.com/divyansh-coder-git"
         target="_blank"
@@ -138,7 +138,7 @@
       >
     </div>
 
-    <div class="links sm:py-2">
+    <div class="links lg:py-2">
       <ul class="flex gap-3">
         <li>
           <a href="#projects">Projects</a>
@@ -231,7 +231,7 @@
     width: 100%;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     .input-form input {
       font-size: 1.2rem;
       height: 3rem;
