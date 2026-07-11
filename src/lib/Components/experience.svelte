@@ -1,5 +1,27 @@
 <script lang="ts">
   import cover_img from "$lib/assets/img2.png";
+
+  import { onMount } from "svelte";
+
+	onMount(() => {
+		const cards = document.querySelectorAll(".reveal");
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("show");
+						observer.unobserve(entry.target);
+					}
+				});
+			},
+			{
+				threshold: 0.2,
+			}
+		);
+
+		cards.forEach((card) => observer.observe(card));
+	});
 </script>
 
 <hr
@@ -111,6 +133,7 @@
 
   .grid-card:hover h1{
     color: #4f8dff;
+    transform: translateY(-2px);
   }
 
   .grid-card:hover span{
@@ -125,7 +148,7 @@
 
   .grid-card:hover i {
     color: #4f8dff;
-    transform: scale(1.3);
+    transform: scale(1.3) rotate(8deg);
   }
 
   

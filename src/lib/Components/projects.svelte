@@ -93,7 +93,7 @@
       </div>
     </div>
 
-    <div class="grid-card reveal" style="transition-delay: 150ms;">
+    <div class="grid-card reveal" style="transition-delay: 200ms;">
       <img src={project_img_2} alt="ProjectImg" />
       <div class="flex flex-col gap-2 lg:gap-4">
         <h3>Hostel Allocation System</h3>
@@ -131,7 +131,7 @@
       </div>
     </div>
 
-    <div class="grid-card reveal" style="transition-delay: 300ms;">
+    <div class="grid-card reveal" style="transition-delay: 400ms;">
       <img src={project_img_3} alt="ProjectImg" />
       <div class="flex flex-col gap-2 lg:gap-4">
         <h3>RealTime Chat</h3>
