@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+:root{
+
+    /* Backgrounds */
+    --main-bg-color: #0a192f;
+    --card-bg-color: #1E3A8A33;
+    --tag-bg-color: #16264A;
+
+    --card-hover-bg-color: #061d44;
+    /* Border colors */
+    --tag-border-color: #2A4F87;
+    --card-border-color: #0a3a4f;
+
+
+    --primary-text-color: #E4E8EF;
+    --secondary-text-color: #ccd6f6;
+    --tag-text-color: #BFD9FF;
+
+    --secondary-theme-text-color: #4F8DFF;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a192f;;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #60a5fa;
+    background-color: #00a6f4;
+    border-radius: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all .8s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}

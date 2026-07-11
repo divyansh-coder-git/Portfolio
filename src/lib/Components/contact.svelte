@@ -56,7 +56,7 @@
   >
     <div class="m-0 p-0 h-14 w-full"></div>
     <h2 class="text-5xl lg:text-6xl text-[#ccd6f6] font-semibold text-center">
-      Contact Me
+      Contact <span class="text-(--secondary-theme-text-color)">Me</span>
     </h2>
     <!-- mt-20 lg:mb-10 -->
     <form
@@ -117,9 +117,9 @@
   </div>
 
   <div
-    class="footer sticky bottom-0 left-0 flex flex-col justify-evenly items-center py-2 lg:py-5 text-white w-full border-t border-slate-500 bg-white/10 backdrop-blur"
+    class="footer sticky bottom-0 left-0 flex flex-col justify-evenly items-center py-2 lg:py-3 text-white w-full border-t border-slate-500 bg-white/10 backdrop-blur"
   >
-    <div class="socials flex gap-3 lg:gap-3 lg:py-2">
+    <div class="socials flex gap-3 lg:gap-3 lg:py-1">
       <a
         href="https://github.com/divyansh-coder-git"
         target="_blank"
@@ -138,8 +138,8 @@
       >
     </div>
 
-    <div class="links lg:py-2">
-      <ul class="flex gap-3">
+    <div class="links">
+      <ul class="flex text-sm gap-2">
         <li>
           <a href="#projects">Projects</a>
         </li>
@@ -162,7 +162,7 @@
     </div>
 
     <div class="credits">
-      <p class="text-sm text-[#8892b0] font-light text-center">
+      <p class="text-xs text-[#8892b0] font-light text-center">
         Credits: isometric PNG Designed By from <a
           href="https://pngtree.com/freepng/web-developer-isometric-illustration_6067558.html?sol=downref&id=bef"
           target="_blank"
@@ -194,7 +194,7 @@
   }
 
   .socials i {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
   }
@@ -208,7 +208,7 @@
     position: relative;
     color: white;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 0.875rem;
   }
 
   .links a:hover {
@@ -221,7 +221,7 @@
     width: 0px;
     left: 0px;
     height: 3px;
-    top: 25px;
+    top: 20px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
     background: #38bdf8;

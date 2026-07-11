@@ -24,7 +24,7 @@
 		transparent 80%
 	)`}
 ></div>
-<div class="bg-[#0a192f]">
+<div class="bg-(--main-bg-color)">
   <div
     class="relative z-1000 main-div scrollbar-track-white scrollbar-thumb-black"
   >

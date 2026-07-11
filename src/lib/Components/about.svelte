@@ -1,5 +1,7 @@
 <script lang="ts">
   import cover_img from "$lib/assets/img1.png";
+  import Download from "@lucide/svelte/icons/download";
+  import Arrowupright from "@lucide/svelte/icons/move-up-right";
   // import resume from "$lib/assets/resume.pdf";
 
   import Typed from "typed.js";
@@ -27,7 +29,7 @@
 
 <div
   id="about"
-  class="text-[#E4E8EF] min-h-screen px-[12%] pt-5 w-full relative flex items-center justify-center snap-start"
+  class="text-(--primary-text-color) min-h-screen px-[12%] pt-5 w-full relative flex items-center justify-center snap-start"
 >
   <div
     class="container flex items-center justify-center mt-8 gap-5 lg:gap-40 flex-col lg:flex-row"
@@ -39,7 +41,7 @@
     >
       <div class="text flex flex-col gap-4 lg:gap-8">
         <h1
-          class="text-3xl lg:text-6xl text-[#E4E8EF] font-semibold text-nowrap"
+          class="text-3xl lg:text-6xl text-(--primary-text-color) font-semibold text-nowrap"
         >
           Divyansh Pandey
         </h1>
@@ -63,13 +65,16 @@
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          class="rounded-[3rem] text-xs lg:text-base py-2 px-6 border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-white hover:text-black"
-          >Download CV</a
+          class="group flex gap-2 items-center rounded-[3rem] text-xs lg:text-base py-2 px-6 cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 bg-linear-to-r from-[#4F8DFF] to-[#3B82F6] active:scale-95 hover:-translate-y-0.5"
+          ><Download class="w-5 h-5 transition-transform duration-200 font-bold group-hover:translate-y-0.5"/>Download CV</a
         >
         <a
           href="#projects"
-          class="rounded-[3rem] text-xs lg:text-base py-2 px-6 border-2 border-white cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 hover:bg-white hover:text-black"
-          >View Projects</a
+          class="group flex gap-2 items-center rounded-[3rem] text-xs lg:text-base py-2 px-6 border border-[#4f8dff] cursor-pointer font-medium text-nowrap transition-all ease-in-out duration-300 active:scale-95 hover:-translate-y-0.5"
+          >
+          <Arrowupright  class="h-4 w-4 transition-transform duration-300 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:scale-125"/>
+
+          View Projects</a
         >
       </div>
 
