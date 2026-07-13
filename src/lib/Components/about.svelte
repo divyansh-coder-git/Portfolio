@@ -90,7 +90,7 @@
           aria-label="SocialLinks"><i class="fa-brands fa-linkedin"></i></a
         >
         <a
-          href="https://instagram.com/divyansh_coder"
+          href="https://instagram.com/divyansh._.pandey__/"
           target="_blank"
           aria-label="SocialLinks"><i class="fa-brands fa-instagram"></i></a
         >
