@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-    <div class="reveal" style="transition-delay: 200ms;">
+    <div class="reveal" style="transition-delay: 75ms;">
       <div class="grid-card h-full">
         <img src={project_img_2} alt="ProjectImg" />
         <div class="flex flex-col gap-2 lg:gap-4">
@@ -135,7 +135,7 @@
       </div>
     </div>
 
-    <div class="reveal" style="transition-delay: 400ms;">
+    <div class="reveal" style="transition-delay: 150ms;">
       <div class="grid-card h-full">
         <img src={project_img_3} alt="ProjectImg" />
         <div class="flex flex-col gap-2 lg:gap-4">
