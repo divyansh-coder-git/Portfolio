@@ -62,7 +62,7 @@
     href="https://github.com/divyansh-coder-git"
     target="_blank"
     ><button
-      class="flex items-center justify-center gap-2 px-4 py-1 rounded-[3rem] text-black bg-slate-200 border border-slate-700 hover:bg-black hover:text-white text-nowrap font-medium text-[1rem] cursor-pointer transition-all ease-in-out durartion-300 hover:scale-105"
+      class="flex items-center justify-center gap-2 px-4 py-1 rounded-[3rem] text-black bg-slate-200 border border-slate-700 hover:bg-black hover:text-white text-nowrap font-medium text-[1rem] cursor-pointer transition-all ease-in-out durartion-200 hover:scale-105"
       ><i class="fa-brands fa-github"></i>Github</button
     ></a
   >

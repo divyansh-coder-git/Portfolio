@@ -39,7 +39,7 @@
 <!-- mt-5 lg:mt-20 -->
 <div class="m-0 p-0 h-12 w-full"></div>
   <h1
-    class="text-4xl lg:text-5xl text-(--secondary-text-color) font-semibold text-center mb-5 lg:mb-0"
+    class="text-4xl lg:text-5xl text-(--secondary-text-color) font-semibold text-center mt-5 lg:mt-0 mb-3 lg:mb-0"
   >
     Skills <span class="text-(--secondary-theme-text-color)">&</span> Interests
   </h1>
@@ -48,7 +48,7 @@
     class="flex flex-col lg:flex-row items-center justify-center lg:gap-10 flex-1 lg:flex-none"
   >
     <div
-      class="flex flex-col justify-around lg:grid lg:grid-cols-2 gap-4 lg:gap-6 px-10 flex-1 pb-5 lg:pb-0 mb-5"
+      class="flex flex-col lg:grid lg:grid-cols-2 lg:items-stretch gap-4 lg:gap-6 px-10 flex-1 pb-5 lg:pb-0 mb-5"
     >
       <div class="grid-card">
         <i class="fa-solid fa-code"></i>
@@ -110,6 +110,7 @@
     justify-content: left;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    height: 100%;
   }
 
   .grid-card span {

@@ -52,7 +52,7 @@
         <h2 class="text-[1rem] lg:text-[2rem]">
           I love <span class="text-[#60a5fa]" use:typingEffect></span>
         </h2>
-        <span class="text-[0.9rem] lg:text-[1.2rem] text-[#8892b0]"
+        <span class="text-[0.9rem] lg:text-[1.2rem] text-(--description-text-color)"
           >I enjoy building full-stack web applications, experimenting with
           machine learning, and turning ideas into practical software that
           people can actually use.</span
