@@ -34,7 +34,7 @@
   class="w-[95vw] m-auto bg-[#0a3a4f] lg:bg-gray-200 border-none h-px snap-start"
 /> -->
 <div
-  class="text-(--secondary-text-color) h-screen lg:h-screen flex flex-col scroll-smooth lg:justify-around snap-center lg:px-10"
+  class="text-(--secondary-text-color) min-h-screen lg:h-screen flex flex-col scroll-smooth lg:justify-around snap-center lg:px-10"
 >
 <!-- mt-5 lg:mt-20 -->
 <div class="m-0 p-0 h-12 w-full"></div>
@@ -48,7 +48,7 @@
     class="flex flex-col lg:flex-row items-center justify-center lg:gap-10 flex-1 lg:flex-none"
   >
     <div
-      class="flex flex-col lg:grid lg:grid-cols-2 lg:items-stretch gap-4 lg:gap-6 px-10 flex-1 pb-5 lg:pb-0 mb-5"
+      class="grid grid-cols-1 lg:grid-cols-2 lg:items-stretch gap-4 lg:gap-6 px-10 flex-1 pb-5 lg:pb-0 mb-5"
     >
       <div class="grid-card">
         <i class="fa-solid fa-code"></i>
@@ -102,6 +102,7 @@
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     background-color: var(--card-bg-color);
     border: 1px solid var(--card-border-color);
     /* border: 2px solid white */
@@ -127,7 +128,7 @@
   }
 
   .grid-card h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     transition: 0.2s ease-in-out;
   }
@@ -143,7 +144,6 @@
 
   .grid-card i {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
     transition: 0.2s ease-in-out;
   }
 
