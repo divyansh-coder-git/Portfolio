@@ -56,7 +56,7 @@
   <div
     class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 px-5 py-7 lg:px-10 lg:py-0 mb-5"
   >
-    <div class="reveal h-full" style="transition-delay: 0ms;">
+    <div class="reveal" style="transition-delay: 0ms;">
       <div class="grid-card">
         <img src={project_img_1} alt="ProjectImg" />
         <div class="flex flex-col gap-2 lg:gap-4">
