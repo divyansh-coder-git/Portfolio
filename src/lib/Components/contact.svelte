@@ -78,14 +78,14 @@
         </h1>
 
         <div class="email">
-          <span class="flex gap-2 items-center text-(--secondary-text-color) text-sm lg:text-base"
+          <span class="flex gap-1 lg:gap-2 items-center text-(--secondary-text-color) text-sm lg:text-base"
             ><Mail class="w-4 h-4 lg:w-5 lg:h-5 text-[#6FA9FF]" />Email</span
           >
           <span class="text-sm lg:text-base text-(--description-text-color)">divyanshpandey062@gmail.com</span>
         </div>
 
         <div class="location">
-          <span class="flex gap-2 items-center text-(--secondary-text-color) text-sm lg:text-base"
+          <span class="flex gap-1 lg:gap-2 items-center text-(--secondary-text-color) text-sm lg:text-base"
             ><Pin class="w-4 h-4 lg:w-5 lg:h-5 text-[#6FA9FF]" />Location</span
           >
           <span class="text-sm lg:text-base text-(--description-text-color)">NIT Silchar, Assam, India</span>
