@@ -37,7 +37,7 @@ Currently I'm focusing on:
 - Responsive Design
 - Dark Theme
 - Modern UI
-- Smooth Animations
+- Smooth Animations (on intersections too)
 - Project Showcase
 - Skills Section
 - Contact Form
