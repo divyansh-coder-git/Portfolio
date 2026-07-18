@@ -94,7 +94,7 @@
     <div
       class="flex flex-col-reverse lg:flex-row gap-5 lg:gap-10 items-center justify-center"
     >
-      <div class="reveal">
+      <div class="reveal" style="transition-delay: 500ms;">
         <div
           class="info-pane flex flex-col gap-4 bg-(--card-bg-color) border rounded-xl border-(--card-border-color) px-7 py-3 hover:border-(--card-hover-border-color) transition-colors duration-150"
         >

@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div class="reveal">
+      <div class="reveal" style="transition-delay: 150ms;">
         <div class="grid-card">
           <i class="fa-solid fa-file-code"></i>
           <h1>Machine Learning</h1>
@@ -76,7 +76,7 @@
         </div>
       </div>
 
-      <div class="reveal">
+      <div class="reveal" style="transition-delay: 300ms;">
         <div class="grid-card">
           <i class="fa-brands fa-python"></i>
           <h1>Python Development</h1>
@@ -88,7 +88,7 @@
         </div>
       </div>
 
-      <div class="reveal">
+      <div class="reveal" style="transition-delay: 450ms;">
         <div class="grid-card">
           <i class="fa-solid fa-brain"></i>
           <h1>Problem Solving</h1>
