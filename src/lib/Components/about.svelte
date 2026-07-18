@@ -26,7 +26,7 @@
     };
   }
 </script>
-
+<div class="reveal">
 <div
   id="about"
   class="text-(--primary-text-color) min-h-screen px-[12%] pt-5 w-full relative flex items-center justify-center snap-start"
@@ -97,6 +97,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <style>

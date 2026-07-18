@@ -3,25 +3,25 @@
 
   import { onMount } from "svelte";
 
-	onMount(() => {
-		const cards = document.querySelectorAll(".reveal");
+  onMount(() => {
+    const cards = document.querySelectorAll(".reveal");
 
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add("show");
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{
-				threshold: 0.2,
-			}
-		);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      },
+    );
 
-		cards.forEach((card) => observer.observe(card));
-	});
+    cards.forEach((card) => observer.observe(card));
+  });
 </script>
 
 <hr
@@ -36,57 +36,67 @@
 <div
   class="text-(--secondary-text-color) min-h-screen lg:h-screen flex flex-col scroll-smooth lg:justify-around snap-center lg:px-10"
 >
-<!-- mt-5 lg:mt-20 -->
-<div class="m-0 p-0 h-12 w-full"></div>
-  <h1
-    class="text-4xl lg:text-5xl text-(--secondary-text-color) font-semibold text-center mt-5 lg:mt-0 mb-3 lg:mb-0"
-  >
-    Skills <span class="text-(--secondary-theme-text-color)">&</span> Interests
-  </h1>
-   <!-- mb-6 lg:mb-5 -->
+  <!-- mt-5 lg:mt-20 -->
+  <div class="m-0 p-0 h-12 w-full"></div>
+  <div class="reveal">
+    <h1
+      class="text-4xl lg:text-5xl text-(--secondary-text-color) font-semibold text-center mt-5 lg:mt-0 mb-3 lg:mb-0"
+    >
+      Skills <span class="text-(--secondary-theme-text-color)">&</span> Interests
+    </h1>
+  </div>
+  <!-- mb-6 lg:mb-5 -->
   <div
     class="flex flex-col lg:flex-row items-center justify-center lg:gap-10 flex-1 lg:flex-none"
   >
     <div
       class="grid grid-cols-1 lg:grid-cols-2 lg:items-stretch gap-4 lg:gap-6 px-10 flex-1 pb-5 lg:pb-0 mb-5"
     >
-      <div class="grid-card">
-        <i class="fa-solid fa-code"></i>
-        <h1>Web Development</h1>
-        <span
-          >Building responsive web applications using Svelte, TypeScript and
-          Tailwind CSS. Focused on creating clean user interfaces and learning
-          modern frontend development.</span
-        >
+      <div class="reveal">
+        <div class="grid-card">
+          <i class="fa-solid fa-code"></i>
+          <h1>Web Development</h1>
+          <span
+            >Building responsive web applications using Svelte, TypeScript and
+            Tailwind CSS. Focused on creating clean user interfaces and learning
+            modern frontend development.</span
+          >
+        </div>
       </div>
 
-      <div class="grid-card">
-        <i class="fa-solid fa-file-code"></i>
-        <h1>Machine Learning</h1>
-        <span
-          >Currently learning Machine Learning through Andrew Ng's course and
-          Summer Analytics 2026, exploring supervised learning and model
-          building.</span
-        >
+      <div class="reveal">
+        <div class="grid-card">
+          <i class="fa-solid fa-file-code"></i>
+          <h1>Machine Learning</h1>
+          <span
+            >Currently learning Machine Learning through Andrew Ng's course and
+            Summer Analytics 2026, exploring supervised learning and model
+            building.</span
+          >
+        </div>
       </div>
 
-      <div class="grid-card">
-        <i class="fa-brands fa-python"></i>
-        <h1>Python Development</h1>
-        <span
-          >Using Python for problem solving, automation and machine learning
-          projects. Familiar with NumPy, data handling and object-oriented
-          programming.</span
-        >
+      <div class="reveal">
+        <div class="grid-card">
+          <i class="fa-brands fa-python"></i>
+          <h1>Python Development</h1>
+          <span
+            >Using Python for problem solving, automation and machine learning
+            projects. Familiar with NumPy, data handling and object-oriented
+            programming.</span
+          >
+        </div>
       </div>
 
-      <div class="grid-card">
-        <i class="fa-solid fa-brain"></i>
-        <h1>Problem Solving</h1>
-        <span
-          >Strengthening analytical thinking through engineering coursework,
-          programming and project development.</span
-        >
+      <div class="reveal">
+        <div class="grid-card">
+          <i class="fa-solid fa-brain"></i>
+          <h1>Problem Solving</h1>
+          <span
+            >Strengthening analytical thinking through engineering coursework,
+            programming and project development.</span
+          >
+        </div>
       </div>
     </div>
     <img
@@ -133,12 +143,12 @@
     transition: 0.2s ease-in-out;
   }
 
-  .grid-card:hover h1{
+  .grid-card:hover h1 {
     color: #4f8dff;
     transform: translateY(-2px);
   }
 
-  .grid-card:hover span{
+  .grid-card:hover span {
     color: var(--secondary-text-color);
   }
 
@@ -151,8 +161,6 @@
     color: #4f8dff;
     transform: scale(1.3) rotate(8deg);
   }
-
-  
 
   @media screen and (max-width: 1024px) {
     .grid-card {

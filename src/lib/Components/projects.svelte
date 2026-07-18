@@ -46,11 +46,13 @@
   <!-- lg:mt-25 -->
   <!-- mt-5 -->
   <div class="m-0 p-0 h-12 w-full"></div>
-  <h1
-    class="text-4xl lg:text-5xl text-[#ccd6f6] font-semibold text-center lg:mb-3"
-  >
-    Recent <span class="text-(--secondary-theme-text-color)">Projects</span>
-  </h1>
+  <div class="reveal">
+    <h1
+      class="text-4xl lg:text-5xl text-[#ccd6f6] font-semibold text-center lg:mb-3"
+    >
+      Recent <span class="text-(--secondary-theme-text-color)">Projects</span>
+    </h1>
+  </div>
   <!-- lg:mb-12 -->
 
   <div
@@ -61,7 +63,10 @@
         <img src={project_img_1} alt="ProjectImg" />
         <div class="flex flex-col gap-2 lg:gap-4">
           <h3>Habit Tracker</h3>
-          <span>Track your daily routines and build positive habits effortlessly.Stay consistent and reach your goals.</span>
+          <span
+            >Track your daily routines and build positive habits
+            effortlessly.Stay consistent and reach your goals.</span
+          >
 
           <div class="tech-stack">
             <span>Svelte</span>
