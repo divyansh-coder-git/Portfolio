@@ -141,8 +141,19 @@
       display: none;
     }
 
+    @keyframes appear{
+      from{
+        opacity: 0;
+      }
+
+      to{
+        opacity: 100%;
+      }
+    }
+
     .nav-ul.active {
       display: flex;
+      animation: appear 0.3s;
     }
   }
 </style>
