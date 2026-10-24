@@ -4,14 +4,14 @@ Electrical Engineering Undergrad @ NIT Silchar
 </h3>
 
 <p align="center">
-Building Full-Stack Projects • Learning AI • Always Improving
+Building Full-Stack Projects • Learning AI/ML • Always Improving
 </p>
 
 
 
 
 ## About Me
-🌐 Live Portfolio: https://divyansh-pandey.netlify.app/
+🌐 Live Portfolio: [divyanshpandey.me](https://divyanshpandey.me)
 
 Hi! I'm Divyansh, a first-year Electrical Engineering student at NIT Silchar who loves building modern web applications and exploring Machine Learning.
 
@@ -46,7 +46,7 @@ Currently I'm focusing on:
 ## Installation
 To run the application locally, you can set it up on your computer and run it on localhost.
 ```bash
-git clone https://github.com/DivyanshCoder1/portfolio.git
+git clone https://github.com/divyansh-coder-git/portfolio
 cd portfolio
 npm install
 npm run dev
@@ -99,7 +99,7 @@ static
 
 **Divyansh Pandey**
 
-[Portfolio](https://divyansh-pandey.netlify.app/)
+[Portfolio](https://divyanshpandey.me)
 [GitHub](https://github.com/divyansh-coder-git)
 [LinkedIn](https://linkedin.com/in/divyansh-pandey-nits)
 [Email](divyanshpandey062@gmail.com)
